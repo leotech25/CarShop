@@ -1,9 +1,10 @@
 @props(['car', 'isInWatchList' => false])
 
- 
+
 <div class="car-item card">
     <a href="{{ route('car.show', $car->id) }}">
         <img src="{{ $car->primaryImage->image_path }}" alt="" class="car-item-img rounded-t" />
+        {{-- <img src="https://via.placeholder.com/640x480.png/009999?text=qui" alt="" class="car-item-img rounded-t" /> --}}
     </a>
     <div class="p-medium">
         <div class="flex items-center justify-between">
